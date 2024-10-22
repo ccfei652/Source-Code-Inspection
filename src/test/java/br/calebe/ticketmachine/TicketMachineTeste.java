@@ -23,7 +23,14 @@ public class TicketMachineTeste {
         TicketMachine ticketMachine = new TicketMachine(100);
         ticketMachine.inserir(13);
     }
-
+    
+     @Test
+    public void getSaldoTeste() throws PapelMoedaInvalidaException {
+        TicketMachine ticketMachine = new TicketMachine(20);
+        ticketMachine.inserir(10);
+        assertEquals(10, ticketMachine.getSaldo());
+    }
+    
     @Test
     public void imprimirTeste() throws PapelMoedaInvalidaException, SaldoInsuficienteException {
         TicketMachine ticketMachine = new TicketMachine(2);
