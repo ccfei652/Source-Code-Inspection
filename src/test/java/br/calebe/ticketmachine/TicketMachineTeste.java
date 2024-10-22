@@ -26,9 +26,9 @@ public class TicketMachineTeste {
 
     @Test
     public void imprimirTeste() throws PapelMoedaInvalidaException, SaldoInsuficienteException {
-        TicketMachine ticketMachine = new TicketMachine(20);
+        TicketMachine ticketMachine = new TicketMachine(2);
         ticketMachine.inserir(20);
-       assertEquals("*****************\n*** R$ 20,00 ****\n*****************\n", ticketMachine.imprimir());
+       assertEquals("*****************\n*** R$ 18,00 ****\n*****************\n", ticketMachine.imprimir());
     }
 
     @Test(expected = SaldoInsuficienteException.class)
