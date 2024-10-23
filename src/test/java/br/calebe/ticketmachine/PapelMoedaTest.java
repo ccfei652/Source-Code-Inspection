@@ -4,7 +4,7 @@ import br.calebe.ticketmachine.core.PapelMoeda;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-public class PapelMoedaTeste {
+public class PapelMoedaTest {
 
 
     @Test
