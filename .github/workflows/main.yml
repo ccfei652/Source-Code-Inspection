@@ -27,8 +27,8 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-maven-
 
-      - name: Install dependencies and run tests
-        run: mvn clean install
+      - name: Install dependencies
+        run: mvn install -DskipTests=true
 
       - name: Run JUnit tests
         run: mvn test
